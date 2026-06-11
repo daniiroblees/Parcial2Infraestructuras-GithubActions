@@ -1,0 +1,13 @@
+name: Test, build and push 
+
+on: [push, pull_request]
+
+jobs: 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del codigo 
+        uses: actions/checkout@v4
+
+      - name: Configurar python
+        uses: actions/setup-python@v5
