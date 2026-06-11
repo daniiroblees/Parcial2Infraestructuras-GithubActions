@@ -49,7 +49,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ vars.REGISTRY }}/sultanes
+          images: ${{ vars.REGISTRY }}/sultaness
           tags: |
             type=ref,event=branch
             type=ref,event=tag
